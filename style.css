@@ -1,0 +1,87 @@
+h1 {
+  text-align: center;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.project-tile {
+  border: solid red 1px;
+}
+
+body {
+  background-color: gray;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+}
+
+#welcome-section{
+  height: 100vh;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  border: solid black 2px;
+  margin: auto;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.project-tile {
+  display: grid;
+  grid-template-rows: 2.2vw 15vw 4vw;
+  width: 90%;
+  height: 26vw;
+  border: solid black 3px;
+  margin: 2%;
+  background-color: LightGray;
+  text-align: center;
+}
+
+h2 {
+  grid-row: 1 / 2;
+  line-height: 1;
+  margin: 0.4vw;
+  padding: 0;
+  font-size: 1.5vw;
+}
+
+li {
+  text-align: left;
+  margin-left: 2vw;
+  font-size: 1.2vw;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#page-frame {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  margin: 0.3vw auto;
+  grid-row: 2 / 3;
+}
+
+#overlay {
+  position:absolute;
+  top:0;
+  left:0;
+  display:inline-block;
+  width: 100%;
+  height: 100%;
+  z-index:5;
+}
+
+#page-desc {
+  grid-row: 3 / 4;
+}
+
+@media (max-width: 500px){
+  #projects{
+    grid-template-columns: 100%;
+  }
+}
