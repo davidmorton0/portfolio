@@ -10,6 +10,8 @@ h1 {
 #projects > h2 {
   margin: 1vw 0 0 1vw;
   display: block;
+  padding-top: 4vh;
+  font-size: 3vh;
 }
 
 h3 {
