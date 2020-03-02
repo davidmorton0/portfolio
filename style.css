@@ -55,37 +55,35 @@ li {
 }
 
 #welcome-section{
-  height: 15vh;
+  height: 20vh;
 }
 
 #projects {
-  grid-template-columns: 100%;
-  border: solid black 2px;
+  width: 90%;
   margin: auto;
-  padding: 1%;
+  padding: 2%;
+  border: solid black 2px;
   font-family: Helvetica, sans-serif;
   background-color: LightCoral;
 }
 
 .project-group {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
 }
 
 .project-tile {
   background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
-  padding: 2vw 0;
   display: grid;
-  grid-template-rows: 2.2vw 15vw 4vw;
+  grid-template-rows: 2.2vw 15vw 11vw;
+  padding: 1vw;
   width: 90%;
-  height: 26vw;
   border: solid black 2px;
   margin: 2%;
 }
 
 #page-frame {
-  width: 70%;
+  width: 30%;
   height: 100%;
   position: relative;
   margin: 0.3vw auto;
