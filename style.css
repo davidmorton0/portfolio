@@ -4,12 +4,11 @@ body {
 }
 
 h1 {
-  text-align: center;
   margin-top: 5%;
 }
 
-h2 {
-  margin-left: 3%;
+#projects > h2 {
+  margin: 1vw 0 0 1vw;
   display: block;
 }
 
@@ -55,14 +54,13 @@ li {
 }
 
 #welcome-section{
-  height: 20vh;
+  text-align: center;
   margin-bottom:2vh;
 }
 
 #projects {
   width: 90%;
   margin: auto;
-  padding: 2%;
   border: solid black 2px;
   font-family: Helvetica, sans-serif;
   background-color: LightCoral;
@@ -76,7 +74,7 @@ li {
   background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
   display: grid;
-  grid-template-rows: 2.2vw 15vw 11vw;
+  grid-template-rows: 2.2vw 15vw auto;
   padding: 1vw;
   width: 90%;
   border: solid black 2px;
