@@ -1,50 +1,31 @@
+body {
+  background-color: Azure;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
 h1 {
   text-align: center;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-}
-
-.project-tile {
-  border: solid red 1px;
-}
-
-body {
-  background-color: gray;
-}
-
-#navbar {
-  position: fixed;
-  top: 0;
-}
-
-#welcome-section{
-  height: 30vh;
-}
-
-#projects {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  border: solid black 2px;
-  margin: auto;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-}
-
-.project-tile {
-  display: grid;
-  grid-template-rows: 2.2vw 15vw 4vw;
-  width: 90%;
-  height: 26vw;
-  border: solid black 3px;
-  margin: 2%;
-  background-color: LightGray;
-  text-align: center;
+  margin-top: 5%;
 }
 
 h2 {
+  margin-left: 3%;
+  display: block;
+}
+
+h3 {
   grid-row: 1 / 2;
   line-height: 1;
   margin: 0.4vw;
   padding: 0;
   font-size: 1.5vw;
+}
+
+img {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  background-color: white;
 }
 
 li {
@@ -53,14 +34,52 @@ li {
   font-size: 1.2vw;
 }
 
-iframe {
+#navbar {
+  display: block;
+  position: fixed;
   width: 100%;
-  height: 100%;
-  background-color: white;
+  top: 0;
+  left: 0;
+  border-bottom: LightCoral solid 2px;
+  background-color: Azure;
+}
+
+#navbar > a {
+  margin: 20px;
+}
+
+#welcome-section{
+  height: 15vh;
+}
+
+#projects {
+  grid-template-columns: 100%;
+  border: solid black 2px;
+  margin: auto;
+  padding: 1%;
+  font-family: Helvetica, sans-serif;
+  background-color: LightCoral;
+}
+
+.project-group {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.project-tile {
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 2vw 0;
+  display: grid;
+  grid-template-rows: 2.2vw 15vw 4vw;
+  width: 90%;
+  height: 26vw;
+  border: solid black 2px;
+  margin: 2%;
 }
 
 #page-frame {
-  width: 50%;
+  width: 70%;
   height: 100%;
   position: relative;
   margin: 0.3vw auto;
@@ -71,7 +90,6 @@ iframe {
   position:absolute;
   top:0;
   left:0;
-  display:inline-block;
   width: 100%;
   height: 100%;
   z-index:5;
